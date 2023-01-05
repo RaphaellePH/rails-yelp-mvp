@@ -13,3 +13,46 @@
  *= require_tree .
  *= require_self
  */
+
+
+ h1 {
+  margin-left: 5px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+ }
+
+ .card {
+  margin: 5px;
+ }
+
+ .btn {
+  margin-top: 2px;
+  margin-bottom: 2px;
+ }
+
+ #reviews {
+  margin: 15px;
+ }
+ #reviews h4 {
+  margin-bottom: 15px;
+ }
+ #reviews .btn-primary {
+  margin-top: 15px;
+ }
+
+ .back-to {
+  margin-left: 5px;
+ }
+
+ #review-form {
+  margin: 15px;
+ }
+
+ #new-resto {
+  margin-left: 5px;
+  margin-top: 20px;
+ }
+
+ #form {
+  margin: 15px; 
+ }

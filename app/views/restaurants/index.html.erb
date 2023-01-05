@@ -1,2 +1,17 @@
 <h1>Restaurants</h1>
-
+<div class="d-flex flex-wrap">
+  <% Restaurant.all.each do |restaurant| %>
+    <div class="card align-bottom" style="width: 18rem">
+      <div class="card-header"><strong><%= restaurant.category.capitalize %></strong></div>
+      <div class="card-body">
+        <h4 class="card-title"><%= restaurant.name %></h4>
+        <div class="card-text">
+          <p>Address : <%= restaurant.address %>
+          <p>Phone : <%= restaurant.phone_number %></p>
+        </div>
+        <%= link_to "Show Reviews", restaurant_path(restaurant), class: "btn btn-light" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+<%= link_to "Enter new Restaurant", new_restaurant_path, class: "btn btn-primary", id: "new-resto" %>
